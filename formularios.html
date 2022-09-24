@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="resultados.html" methot="GET">
+        <!--post se usa cuando se va a trabajar la info con un servidor-->
+        <!--el metodo get se usa cuando no vamos a usar un servidor para trabajar la info-->
+        <div>
+            <label for="nombreusuario">Nombre de usuario</label>
+            <!--este for  nos sirge para 
+                relacionar este label con un imput en este caso con nombre de usuario que vemos mas abajo-->
+            <input type="text" name="nombreusuario" id="nombreusuario" required />
+            <!--required hace que sea obligatorio rellenarlo-->
+            <!--espacio en blanco para que se escriba el campo Nombre de usuario-->
+        </div>
+        <br>
+        <div>
+            <label for="password">Contrase&ntildea</label>
+            <input type="password" name="password" id="password" required />
+            <!--el type passwor hace que no se vea lo que se escribe-->
+            <!--espacio en blanco para que se escriba el campo contaseña-->
+        </div>
+        <br>
+        <div>
+            <label for="Telefono">Teléfono</label>
+            <input type="number" name="telefono" id="telefono" minlength="9" maxlength="9" />
+            <!--el type number hace que solo se puedan escribir numeros
+            luego le estoy dando una medida minima y maxima -->
+
+        </div>
+        <br>
+        <div>
+            <label for="edad">edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="100" />
+            <!--min hace que haya una edad minima en este caso-->
+
+        </div>
+        <br>
+        <div>
+            <label for="fecha_de_nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento" />
+            <!--min hace que haya una edad minima en este caso-->
+
+        </div>
+        <br>
+        <div>
+            <label for="incremento_numerico">Incremento Numerico</label>
+            <input type="number" name="incremento_numerico" id="incremento_numerico" step="5" />
+            <!--step hace que yo ponga de rango nimeroco de 5 en cinco en este caso-->
+
+        </div>
+        <br>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" />
+            <!--el type emailse precise de un @lo que sea.com-->
+
+        </div>
+        <br>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10">
+            </textarea>
+        </div>
+        <br>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Enviar</button>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
